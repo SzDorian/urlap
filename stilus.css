@@ -1,1 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
+
+
+p{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 20px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:yellow;
+  color: black;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+}
+
+h2{
+  font-family: 'Black Ops One', cursive;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #fcfc94;
+}
+
+button {
+  border-radius: 25px;
+  background-color: darkcyan;
+}
+
+a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.sidebar {
+  font-family: 'Shadows Into Light', cursive;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #2d19ff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  background-color: yellow;
+  color: blue;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
